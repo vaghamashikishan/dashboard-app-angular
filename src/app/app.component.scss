@@ -1,0 +1,41 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+
+  background: url("../assets/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2.5;
+
+  h1 {
+    font-size: 100px;
+    text-shadow: 1px 1px 5px white;
+  }
+  h2 {
+    font-size: 36px;
+    text-shadow: 1px 1px 5px white;
+  }
+}
+
+.content-section {
+  flex-grow: 10;
+}
+
+.bottom-section {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  flex-grow: 0.4;
+}
