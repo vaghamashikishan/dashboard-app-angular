@@ -30,7 +30,8 @@
 }
 
 .content-section {
-  // flex-grow: 10;
+  // margin: auto;
+  flex-grow: 10;
   flex-shrink: 0;
   overflow: auto;
 }
@@ -43,3 +44,6 @@
   margin-top: 15px;
   flex-grow: 0.4;
 }
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
