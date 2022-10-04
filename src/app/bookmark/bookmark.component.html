@@ -1,1 +1,24 @@
-<p>bookmark works!</p>
+<div class="bookmark-wrapper">
+  <div class="bookmarks">
+    <div class="bookmark">
+      <img src="https://wikipedia.com/favicon.ico" alt="" srcset="" width="45px" height="45px">
+      <div>Wikipedia</div>
+    </div>
+    <ng-container *ngFor="let item of bookmarkArray">
+      <div class="bookmark">
+        <img [src]="item.icon" alt="" srcset="" width="45px" height="45px">
+        <div>{{item.name}}</div>
+      </div>
+    </ng-container>
+  </div>
+  <div class="menus">
+    <div class="menu" (click)="addBookmark()">
+      <i class="material-icons-outlined">add</i>
+      <p>Add</p>
+    </div>
+    <div class="menu">
+      <i class="material-icons-outlined">tune</i>
+      <p>Manage</p>
+    </div>
+  </div>
+</div>

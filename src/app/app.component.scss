@@ -14,9 +14,10 @@
 .top-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 5rem;
   align-items: center;
   flex-grow: 2.5;
+  flex-shrink: 5;
 
   h1 {
     font-size: 100px;
@@ -29,7 +30,9 @@
 }
 
 .content-section {
-  flex-grow: 10;
+  // flex-grow: 10;
+  flex-shrink: 0;
+  overflow: auto;
 }
 
 .bottom-section {
@@ -37,5 +40,6 @@
   align-items: center;
   width: fit-content;
   margin: auto;
+  margin-top: 15px;
   flex-grow: 0.4;
 }

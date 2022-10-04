@@ -11,5 +11,15 @@ export class BookmarkComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  bookmarkArray: any[] = [];
+  addBookmark() {
+    let bookmark = {
+      icon: "https://wikipedia.com/favicon.ico",
+      name: 'YouTube',
+      link: 'https://youtube.com'
+    }
+    this.bookmarkArray.push(bookmark);
+    console.log(this.bookmarkArray);
 
+  }
 }
